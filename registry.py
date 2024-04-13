@@ -28,15 +28,3 @@ class Registry:
 
         return (info)
 
-    def add_commands_to_animal(self, name, age, commands):
-        for animal in self.registry:
-            if animal["name"] == name and animal["age"] == age:
-                animal["commands"] = commands
-                break
-        else:
-            print("Животное не найдено в реестре.")
-
-    def display_registry(self):
-        print("Реестр животных:")
-        for animal in self.registry:
-            print(f"Имя: {animal['name']}, Возраст: {animal['age']}, Тип: {animal['type']}")

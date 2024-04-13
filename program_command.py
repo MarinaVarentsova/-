@@ -4,13 +4,11 @@ import function
 
 def list_program():
     print('\n Выберите команду по работе с заметками: '
-          '\n 1 - осмотреть реестр животых'
-          '\n 2 - добавление животного'
-          '\n 3 - удаление животного'
-          '\n 4 - редактирование животного'
-          '\n 5 - посмотреть список команд животного'
-          '\n 6 - обучить новым командам животного'
-          '\n 7 - выход')
+          '\n 1 - посмотреть реестр животых'
+          '\n 2 - добавление нового животного в реестр'
+          '\n 3 - добавление новой команды животному'
+          '\n 4 - посмотреть список команд животного'
+          '\n 5 - выход')
 
 
 def run():
@@ -22,9 +20,9 @@ def run():
         elif command == '2':
             function.add_animals()
         elif command == '3':
-            function.delete_note()
-        elif command == '4':
-            function.change_note()
+            function.add_commands()
+        # elif command == '4':
+        #     function.find_note()
         elif command == '5':
             break
         else:

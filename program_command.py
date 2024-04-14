@@ -21,8 +21,8 @@ def run():
             function.add_animals()
         elif command == '3':
             function.add_commands()
-        # elif command == '4':
-        #     function.find_note()
+        elif command == '4':
+            function.show_commands()
         elif command == '5':
             break
         else:

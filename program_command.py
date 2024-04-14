@@ -1,4 +1,3 @@
-import registry
 import function
 
 

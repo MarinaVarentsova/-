@@ -1,7 +1,4 @@
-import csv
 from os.path import exists
-from datetime import datetime
-
 
 path = "note_animals.cvs"
 path1 = "command_list_animals.cvs"
@@ -44,6 +41,7 @@ def read_file1(path1):
         commands = data.readlines()
         data.close()
     return commands
+
 
 def write_file(info):
     with open(path, 'a', encoding='utf-8') as data:

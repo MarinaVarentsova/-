@@ -22,7 +22,3 @@ class Commands:
         command = input("Введите новую команду: ")
         info1.append(command)
         return info1
-
-
-
-

@@ -8,6 +8,10 @@ def show_animals():
     data = file.read_file(path)
     print(data)
 
+def show_commands():
+    path1 = file.path_file1()
+    data1 = file.read_file1(path1)
+    print(data1)
 
 def add_animals():
     file.path_file()
@@ -16,7 +20,17 @@ def add_animals():
     file.write_file(info)
 
 def add_commands():
-    file.path_file1()
+    # path = file.path_file()
+    # info = file.find_animals(path)
+    # info1 = []
+    # name = info[0]
+    # info1.append(name)
+    # age = info[1]
+    # info1.append(age)
+    # animal_type = info[2]
+    # info1.append(animal_type)
+    # command = input("Введите новую команду: ")
+    # info1.append(command)
     info_1 = commands.Commands()
     info1 = info_1.get_info1()
     file.write_file1(info1)
